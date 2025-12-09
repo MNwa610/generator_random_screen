@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генератор цветового фона</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="pill">Express.js + API + Static</p>
+      <h1>Генератор цветового фона</h1>
+      <p class="subtitle">Получайте случайные цвета, применяйте фон и сохраняйте любимые.</p>
+      <div class="actions">
+        <button id="randomBtn">Случайные цвета</button>
+        <button id="applyBtn" class="secondary">Применить выбранный фон</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="panel__header">
+        <h2>Последние случайные цвета</h2>
+        <label>Количество
+          <input id="countInput" type="number" value="5" min="1" max="30" />
+        </label>
+      </div>
+      <div id="colorsGrid" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Добавить свой цвет</h2>
+      <form id="createForm" class="form">
+        <label>Название
+          <input type="text" name="name" required placeholder="Нежный розовый" />
+        </label>
+        <label>HEX-значение
+          <input type="text" name="value" required placeholder="#F5A3B4" />
+        </label>
+        <label>Заметка
+          <input type="text" name="note" placeholder="Комментарий (необязательно)" />
+        </label>
+        <button type="submit">Сохранить</button>
+      </form>
+      <p id="createMessage" class="hint"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>API: <code>/api/colors</code> • Статика раздаётся из <code>/public</code></p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
+
