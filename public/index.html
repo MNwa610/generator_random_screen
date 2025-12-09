@@ -4,18 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Генератор цветового фона</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header>
-    <div>
-      <p class="pill">Express.js + API + Static</p>
-      <h1>Генератор цветового фона</h1>
-      <p class="subtitle">Получайте случайные цвета, применяйте фон и сохраняйте любимые.</p>
-      <div class="actions">
-        <button id="randomBtn">Случайные цвета</button>
-        <button id="applyBtn" class="secondary">Применить выбранный фон</button>
-      </div>
+  <header class="top">
+    <h1>Генератор цветового фона</h1>
+    <p class="subtitle">Случайные цвета + возможность добавить свой.</p>
+    <div class="actions">
+      <button id="randomBtn">Получить цвета</button>
+      <button id="applyBtn" class="secondary">Применить выбранный</button>
     </div>
   </header>
 
@@ -49,10 +46,10 @@
   </main>
 
   <footer>
-    <p>API: <code>/api/colors</code> • Статика раздаётся из <code>/public</code></p>
+    <p>API: <code>/api/colors</code> • Статика из <code>/public</code></p>
   </footer>
 
-  <script src="/script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
 
